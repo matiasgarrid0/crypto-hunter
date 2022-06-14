@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* background-color: rgb(23, 23, 44); */
+  color: rgb(0, 0, 0);
+}
+
+a{
+  text-decoration: none;
+  color: gold;
+}
+body{
+  background-color: #16181f;
+}
+
+/*-------------HEADER-------------*/
+.container-div-elements{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(14,1,22);
+  background: linear-gradient(90deg, rgba(14,1,22,1) 12%, rgba(12,3,55,1) 96%, rgba(17,4,77,1) 100%);
+  height: 6.5rem;
+}
+.link-header{
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.select-header{
+   cursor: pointer;
+   border: solid 1px gold;
+   outline: none;
+   width: 5rem;
+   height: 2rem;
+   background-color: #16181f;
+   border-radius: 8px;
+   font-weight: 700;
+   color: gold;
+}
+.select-header option{
+  color: gold;
+  font-weight: 700;
+}
+
+/*-------------HOME-------------*/
+/*Banner*/
+.div-banner{
+  background-image: url('./images/banner2.jpg');
+  background-repeat: no-repeat;
+  height: 32rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center
+}
+.div-titles-banner{
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ padding-top: 6rem;
+}
+.p-title-banner{
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 800;
+}
+.p-text-banner{
+  color: #fff;
+}
+
+/*Carousel*/
+.div-container-carousel{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-top: 4rem;
+}
+.link-carousel-banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.name-carousel{
+  color: #fff;
+}
+.span-price-change-red{
+  color: red;
+}
+.span-price-change-green{
+  color: green;
+}
+/*-------------TABLE-------------*/
+.aling-center{
+  display: flex;
+  align-items: center;
+}
+.container-table {
+  padding-top: 5rem;
+}
+.black {
+  background-color: #16181f;
+}
+.table {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.white {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+.whiteSpan {
+  color: rgba(255, 255, 255, 0.3);
+}
+.pricePositive {
+  color: green;
+}
+.priceNegative {
+  color: red;
+}
+.separate {
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+.center {
+  align-items: center;
+  text-align: center;
+}
+.trrr{
+  padding-top: 1rem;
+}
+.separated{
+  border-bottom: solid #fff 1px;
+}
+.tr-title{
+  background-color: gold;
+  height: 2rem;
+}
+.td-title{
+  font-weight: 700;
+}
+.space-img{
+  margin-right: 1rem;
+  margin-left: 2rem;
+  width: 3%;
+}
+.separate-line{
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+}
+.title-center{
+  text-align: center;
+}
+.hover-link-table :hover{
+background-color: #2d313d;
+}
+/*input*/
+.div-table-input{
+  background-color: #16181f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  flex-direction: column;
+}
+.p-input-table{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+.input-table{
+  background-color: #16181f;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  border: 1px solid gold;
+  height: 2.5rem;
+  width: 40%;
+  border-radius: 5px;
+  color: gold;
+}
+
+/*--------------DETAIL--------------*/
+.detail-container-cards{
+  display: flex;
+}
+.detail-card-div{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1e26;
+  border-radius: 10px;
+  height: 32rem;
+  width: 25rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+}
+.image-detail{
+  width: 45%;
+  z-index: 1;
+}
+.p-name-detail{
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+.div-container-p{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: -4rem;
+  margin-top: 5rem;
+}
+
+.p-detail{
+  color: rgb(218, 215, 215);
+  font-weight: 700;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+.p-span-detail{
+  color: #fff;
+  font-size: 1.2rem;
+}
+.separatedd{
+  background-color: #fff;
+  height: 32rem;
+  width: 1px;
+  margin: 1rem;
+}
+/*--------Chart--------*/
+.coinchart-father-div{
+  width: 80%
+}
+.button-days-chart{
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  color: gold;
+  border: solid 1px gold;
+  background-color: #16181f;
+  font-weight: 700;
+
+}
+.button-days-chart:hover{
+  cursor: pointer;
+  background-color: gold;
+  color: #16181f;
+  font-weight: 700;
+}
+/*-----------FOOTER----------*/
+.div-container-footer{
+  background: rgb(14,1,22);
+  background: linear-gradient(90deg, rgba(14,1,22,1) 12%, rgba(12,3,55,1) 96%, rgba(17,4,77,1) 100%);
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.p-footer{
+  color: gold;
+  font-size: 1rem;
+}
+.span-footer{
+  color: gold;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.img-footer{
+  width: 10%;
+}
+
+
+/*------------------------------------------MEDIA QUERIES*---------------------------------------*/
+
+@media (max-width: 600px) {
+  .link-header{
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .div-banner {
+    height: 40rem;
+  }
+  .table {
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .space-img{
+    width: 35px;
+    height: 35px;
+  }
+  .whiteSpan{
+    display: none;
+  }
+  .detail-container-cards{
+    display: block;
+  }
+  .separatedd{
+    background-color: #fff;
+    height: 1px;
+    width: 90%;
+    margin: 1rem;
+  }
+  .detail-card-div{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1e26;
+    border-radius: 10px;
+    height: 22rem;
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+  .image-detail{
+    width: 30%;
+    z-index: 1;
+  }
+  .p-name-detail{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    z-index: 1;
+  }
+  
+  .div-container-p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  
+  .p-detail{
+    color: rgb(218, 215, 215);
+    font-weight: 700;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  .p-span-detail{
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .container-detail-div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .button-days-chart{
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: gold;
+    border: solid 1px gold;
+    background-color: #16181f;
+    font-weight: 700;
+  }
+  .coinchart-father-div{
+    width: 100%;
+    height: 100%;
+  }
+  .img-footer{
+    width: 15%;
+  }
+  .p-footer{
+    font-size: 1rem;
+  }
+  .span-footer{
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .div-container-footer{
+    height: 7rem;
+  }
+ 
+}
