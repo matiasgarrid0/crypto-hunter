@@ -14,6 +14,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { CryptoState } from "../Context";
 
 export const CoinsChart = ({ coin }) => {
   const { id } = useParams();
@@ -22,13 +23,14 @@ export const CoinsChart = ({ coin }) => {
   const [historicData, setHistoricData] = useState();
   const [flag, setFlag] = useState(false);
   const [days, setDays] = useState(1);
-  let currency = 'usd';
+  const { currency } = CryptoState();
+
 
   useEffect(() => {
     dispatch(getChart(id, currency, days));
     setHistoricData(chart.prices);
     setFlag(true);
-  }, [dispatch, days]);
+  }, [dispatch, days,currency,id]);
 
   ChartJS.register(
     CategoryScale,

@@ -25,12 +25,13 @@ export const getCoin = (id) => async (dispatch) => {
     }
 }
 
-export const getChart = (id, currency, days = 1) => async (dispatch) => {
+export const getChart = (id, currency='usd', days = 1) => async (dispatch) => {
     try {
         const res = await axios.get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=${currency}&days=${days}`)
-        dispatch({type: 'GET_CHART', payload: res.data})
-        console.log(currency)
+        dispatch({type: 'GET_CHART', payload: res.data}) 
+        console.log('hola')
     } catch (error) {
         console.log(error)
     }
 }
+ 

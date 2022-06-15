@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,70 +9,82 @@
   color: rgb(0, 0, 0);
 }
 
-a{
+a {
   text-decoration: none;
   color: gold;
 }
-body{
+body {
   background-color: #16181f;
 }
 
 /*-------------HEADER-------------*/
-.container-div-elements{
+.container-div-elements {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: rgb(14,1,22);
-  background: linear-gradient(90deg, rgba(14,1,22,1) 12%, rgba(12,3,55,1) 96%, rgba(17,4,77,1) 100%);
+  background: rgb(14, 1, 22);
+  background: linear-gradient(
+    90deg,
+    rgba(14, 1, 22, 1) 12%,
+    rgba(12, 3, 55, 1) 96%,
+    rgba(17, 4, 77, 1) 100%
+  );
   height: 6.5rem;
 }
-.link-header{
+.link-header {
   font-weight: 700;
   font-size: 2.5rem;
 }
-.select-header{
-   cursor: pointer;
-   border: solid 1px gold;
-   outline: none;
-   width: 5rem;
-   height: 2rem;
-   background-color: #16181f;
-   border-radius: 8px;
-   font-weight: 700;
-   color: gold;
+.select-header {
+  cursor: pointer;
+  border: solid 1px gold;
+  outline: none;
+  width: 5rem;
+  height: 2rem;
+  background-color: #16181f;
+  border-radius: 8px;
+  font-weight: 700;
+  color: gold;
 }
-.select-header option{
+.select-header option {
   color: gold;
   font-weight: 700;
+}
+.div-container-log-curr {
+  display: flex;
+}
+.div-container-log-curr select {
+  margin-right: 2rem;
+  margin-left: 3rem;
 }
 
 /*-------------HOME-------------*/
 /*Banner*/
-.div-banner{
-  background-image: url('./images/banner2.jpg');
+.div-banner {
+  background-image: url("./images/banner2.jpg");
   background-repeat: no-repeat;
   height: 32rem;
   width: 100%;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
-.div-titles-banner{
- display: flex;
- flex-direction: column;
- text-align: center;
- padding-top: 6rem;
+.div-titles-banner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 6rem;
 }
-.p-title-banner{
+.p-title-banner {
   color: #fff;
   font-size: 5rem;
   font-weight: 800;
 }
-.p-text-banner{
+.p-text-banner {
   color: #fff;
 }
 
 /*Carousel*/
-.div-container-carousel{
+.div-container-carousel {
   height: 50%;
   display: flex;
   align-items: center;
@@ -80,24 +92,24 @@ body{
   margin-left: 1rem;
   margin-top: 4rem;
 }
-.link-carousel-banner{
+.link-carousel-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.name-carousel{
+.name-carousel {
   color: #fff;
 }
-.span-price-change-red{
+.span-price-change-red {
   color: red;
 }
-.span-price-change-green{
+.span-price-change-green {
   color: green;
 }
 /*-------------TABLE-------------*/
-.aling-center{
+.aling-center {
   display: flex;
   align-items: center;
 }
@@ -134,37 +146,37 @@ body{
   align-items: center;
   text-align: center;
 }
-.trrr{
+.trrr {
   padding-top: 1rem;
 }
-.separated{
+.separated {
   border-bottom: solid #fff 1px;
 }
-.tr-title{
+.tr-title {
   background-color: gold;
   height: 2rem;
 }
-.td-title{
+.td-title {
   font-weight: 700;
 }
-.space-img{
+.space-img {
   margin-right: 1rem;
   margin-left: 2rem;
   width: 3%;
 }
-.separate-line{
+.separate-line {
   height: 1px;
   width: 100%;
   background-color: #fff;
 }
-.title-center{
+.title-center {
   text-align: center;
 }
-.hover-link-table :hover{
-background-color: #2d313d;
+.hover-link-table :hover {
+  background-color: #2d313d;
 }
 /*input*/
-.div-table-input{
+.div-table-input {
   background-color: #16181f;
   display: flex;
   align-items: center;
@@ -172,14 +184,14 @@ background-color: #2d313d;
   height: 10rem;
   flex-direction: column;
 }
-.p-input-table{
+.p-input-table {
   padding-bottom: 1rem;
   padding-top: 1rem;
   color: #fff;
   font-size: 2rem;
   text-align: center;
 }
-.input-table{
+.input-table {
   background-color: #16181f;
   font-size: 1rem;
   text-align: center;
@@ -192,10 +204,10 @@ background-color: #2d313d;
 }
 
 /*--------------DETAIL--------------*/
-.detail-container-cards{
+.detail-container-cards {
   display: flex;
 }
-.detail-card-div{
+.detail-card-div {
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -208,18 +220,18 @@ background-color: #2d313d;
   text-align: center;
   align-items: center;
 }
-.image-detail{
+.image-detail {
   width: 45%;
   z-index: 1;
 }
-.p-name-detail{
+.p-name-detail {
   color: #fff;
   font-weight: 700;
   font-size: 2.5rem;
   z-index: 1;
 }
 
-.div-container-p{
+.div-container-p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -227,69 +239,138 @@ background-color: #2d313d;
   margin-top: 5rem;
 }
 
-.p-detail{
+.p-detail {
   color: rgb(218, 215, 215);
   font-weight: 700;
   font-size: 1.5rem;
   z-index: 1;
 }
-.p-span-detail{
+.p-span-detail {
   color: #fff;
   font-size: 1.2rem;
 }
-.separatedd{
+.separatedd {
   background-color: #fff;
   height: 32rem;
   width: 1px;
   margin: 1rem;
 }
 /*--------Chart--------*/
-.coinchart-father-div{
-  width: 80%
+.coinchart-father-div {
+  width: 80%;
 }
-.button-days-chart{
+.button-days-chart {
   padding: 0.5rem 2rem;
   border-radius: 5px;
   color: gold;
   border: solid 1px gold;
   background-color: #16181f;
   font-weight: 700;
-
 }
-.button-days-chart:hover{
+.button-days-chart:hover {
   cursor: pointer;
   background-color: gold;
   color: #16181f;
   font-weight: 700;
 }
 /*-----------FOOTER----------*/
-.div-container-footer{
-  background: rgb(14,1,22);
-  background: linear-gradient(90deg, rgba(14,1,22,1) 12%, rgba(12,3,55,1) 96%, rgba(17,4,77,1) 100%);
+.div-container-footer {
+  background: rgb(14, 1, 22);
+  background: linear-gradient(
+    90deg,
+    rgba(14, 1, 22, 1) 12%,
+    rgba(12, 3, 55, 1) 96%,
+    rgba(17, 4, 77, 1) 100%
+  );
   display: flex;
   height: 5rem;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
-.p-footer{
+.p-footer {
   color: gold;
   font-size: 1rem;
 }
-.span-footer{
+.span-footer {
   color: gold;
   font-size: 1.2rem;
   font-weight: 700;
 }
-.img-footer{
+.img-footer {
   width: 10%;
 }
+/*----------------------AUTH-----------------------*/
 
+/*-------------------Signup--------------------*/
+.div-signup-google-button{
+  margin-top: -1rem;
+}
+
+/*---------User--------*/
+.div-drawer-user {
+  width: 25rem;
+  padding: 2.5rem;
+  height: 100%;
+  flex-direction: column;
+  font-family: monospace;
+  background-color: #16181f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-avatar-drawer-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.span-avatar-drawer-user {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.div-logout-drawer{
+  margin-top: 5rem;
+}
+
+.div-watchlist{
+  height: 100%;
+  text-align: center;
+}
+
+.div-watchlist p{
+  color: rgb(255, 221, 0);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.div-scroll-drawer{
+  margin-top: 1rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 12rem;
+  width: 22rem;
+  background-color: #2d313d;
+  border-radius: 10px;
+}
+.div-scroll-drawer::-webkit-scrollbar {
+  width: 10px;
+}
+.div-scroll-drawer::-webkit-scrollbar-thumb{
+  background: gold; 
+  border-radius: 5px;
+}
+.div-scroll-drawer::-webkit-scrollbar-thumb:hover{
+  background: rgb(255, 234, 117); 
+  cursor: pointer;
+}
 
 /*------------------------------------------MEDIA QUERIES*---------------------------------------*/
 
 @media (max-width: 600px) {
-  .link-header{
+  .link-header {
     font-weight: 700;
     font-size: 1.5rem;
   }
@@ -302,23 +383,23 @@ background-color: #2d313d;
     padding-top: 3rem;
     padding-bottom: 1rem;
   }
-  .space-img{
+  .space-img {
     width: 35px;
     height: 35px;
   }
-  .whiteSpan{
+  .whiteSpan {
     display: none;
   }
-  .detail-container-cards{
+  .detail-container-cards {
     display: block;
   }
-  .separatedd{
+  .separatedd {
     background-color: #fff;
     height: 1px;
     width: 90%;
     margin: 1rem;
   }
-  .detail-card-div{
+  .detail-card-div {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -331,41 +412,41 @@ background-color: #2d313d;
     text-align: center;
     align-items: center;
   }
-  .image-detail{
+  .image-detail {
     width: 30%;
     z-index: 1;
   }
-  .p-name-detail{
+  .p-name-detail {
     color: #fff;
     font-weight: 700;
     font-size: 2rem;
     z-index: 1;
   }
-  
-  .div-container-p{
+
+  .div-container-p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 0;
     margin-top: 2rem;
   }
-  
-  .p-detail{
+
+  .p-detail {
     color: rgb(218, 215, 215);
     font-weight: 700;
     font-size: 1.5rem;
     z-index: 1;
   }
-  .p-span-detail{
+  .p-span-detail {
     color: #fff;
     font-size: 1.2rem;
   }
-  .container-detail-div{
+  .container-detail-div {
     align-items: center;
     display: flex;
     justify-content: center;
   }
-  .button-days-chart{
+  .button-days-chart {
     padding: 3px 6px;
     border-radius: 5px;
     color: gold;
@@ -373,22 +454,21 @@ background-color: #2d313d;
     background-color: #16181f;
     font-weight: 700;
   }
-  .coinchart-father-div{
+  .coinchart-father-div {
     width: 100%;
     height: 100%;
   }
-  .img-footer{
+  .img-footer {
     width: 15%;
   }
-  .p-footer{
+  .p-footer {
     font-size: 1rem;
   }
-  .span-footer{
+  .span-footer {
     font-size: 1.2rem;
     font-weight: 700;
   }
-  .div-container-footer{
+  .div-container-footer {
     height: 7rem;
   }
- 
 }

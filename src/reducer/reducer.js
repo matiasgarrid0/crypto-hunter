@@ -2,7 +2,7 @@ const initialState = {
   trend: [],
   coins: [],
   coin: [],
-  chart: []
+  chart: [],
 };
 
 const coinReducer = (state = initialState, { payload, type }) => {
@@ -22,11 +22,12 @@ const coinReducer = (state = initialState, { payload, type }) => {
         ...state,
         coin: payload,
       };
-      case 'GET_CHART' : 
+      case 'GET_CHART': 
       return{
         ...state,
-        chart: payload
+        chart: payload,
       }
+
     default:
       return state;
   }
