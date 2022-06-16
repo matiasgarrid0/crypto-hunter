@@ -33,6 +33,7 @@ body {
     rgba(17, 4, 77, 1) 100%
   );
   height: 6.5rem;
+  padding: 1rem;
 }
 .link-header {
   font-weight: 700;
@@ -516,5 +517,12 @@ body {
   }
   .div-container-footer {
     height: 7rem;
+  }
+  .div-container-cards{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
   }
 }
