@@ -209,6 +209,7 @@ body {
 /*--------------DETAIL--------------*/
 .detail-container-cards {
   display: flex;
+  padding-bottom: 1rem;
 }
 .detail-card-div {
   color: #fff;
@@ -260,7 +261,7 @@ body {
 }
 /*--------Chart--------*/
 .coinchart-father-div {
-  width: 80%;
+  width: 75%;
 }
 .button-days-chart {
   padding: 0.5rem 2rem;

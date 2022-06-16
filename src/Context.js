@@ -12,7 +12,7 @@ export const Context = ({ children }) => {
     message: "",
     type: "success",
   });
-  const [currency, setCurrency] = useState("usd");
+  const [currency, setCurrency] = useState('usd');
   const [wachlist, setWachlist] = useState([]);
 
   useEffect(() => {

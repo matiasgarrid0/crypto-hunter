@@ -86,7 +86,7 @@ export const Detail = () => {
               </span>
             </p>
             <p p className="p-detail">
-              Market Cap:{" "}
+              MC: {" "}
               <span className="p-span-detail">
                 $ {dollarTransform.format(coin?.market_data?.market_cap.usd)}
               </span>
