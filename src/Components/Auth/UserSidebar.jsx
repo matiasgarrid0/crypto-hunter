@@ -6,6 +6,10 @@ import { Avatar } from "@mui/material";
 import { signOut } from "firebase/auth";
 import { auth } from "../../Firebase";
 import { useSelector } from "react-redux";
+import { AiFillDelete } from "react-icons/ai";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../../Firebase";
+
 
 export const UserSidebar = () => {
   const [state, setState] = React.useState({
@@ -34,6 +38,32 @@ export const UserSidebar = () => {
     });
     toggleDrawer();
   };
+
+  const removeFromWachlist = async (coin) => {
+    const coinRef = doc(db, 'watchlist', user.uid);
+    try {
+      await setDoc(coinRef,
+        {
+          coins: wachlist.filter((watch)=> watch !== coin?.id)
+        },
+        {merge:'true'}
+        )
+        setAlert({
+          open:true,
+          type: 'warning',
+          message: `${coin.name} Removed from your watchlist`
+      })
+    } catch (error) {
+      setAlert({
+        open:true,
+        type: 'error',
+        message: error.message
+    })
+    }
+  }
+
+  let profit = coins.price_change_percentage_24h >= 0;
+  let dollarTransform = Intl.NumberFormat("en-US");
 
   return (
     <div>
@@ -76,14 +106,38 @@ export const UserSidebar = () => {
                   {user.displayName || user.email}
                 </span>
                 <div className="div-watchlist">
-                  <p>Wachlist</p>
+                  <p>Watchlist</p>
                   <div className="div-scroll-drawer">
                     {coins.map((coin) => {
-                      if (wachlist.includes(coin.id)) return (
-                        <div key={coin.id}>
-                          <span>{coin.name}</span>
-                        </div>
-                      );
+                      if (wachlist.includes(coin.id))
+                        return (
+                          <div
+                            className="div-container-coins-wachlist"
+                            key={coin.id}
+                          >
+                            <span className="span-wachlist">{coin.name}</span>
+                            <span className="margin-left">
+                              {"  $" +
+                                dollarTransform.format(coin?.current_price)}
+                            </span>
+                            <span
+                              className={
+                                coin.price_change_percentage_24h < 0
+                                  ? "span-price-change-red margin-left"
+                                  : "span-price-change-green margin-left"
+                              }
+                            >
+                              {profit && "+"}
+                              {" " +
+                                coin.price_change_percentage_24h?.toFixed(2)}
+                              %
+                            </span>
+                            <AiFillDelete
+                            style={{width:40, cursor:'pointer'}}
+                              onClick={()=>removeFromWachlist(coin)}
+                            />
+                          </div>
+                        );
                     })}
                   </div>
                 </div>

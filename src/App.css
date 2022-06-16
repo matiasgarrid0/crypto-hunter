@@ -16,6 +16,9 @@ a {
 body {
   background-color: #16181f;
 }
+.margin-left{
+  margin-left: 1rem;
+}
 
 /*-------------HEADER-------------*/
 .container-div-elements {
@@ -356,7 +359,7 @@ body {
   border-radius: 10px;
 }
 .div-scroll-drawer::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 .div-scroll-drawer::-webkit-scrollbar-thumb{
   background: gold; 
@@ -367,6 +370,18 @@ body {
   cursor: pointer;
 }
 
+.div-container-coins-wachlist{
+  background-color: gold;
+  display: flex;
+  padding: 5px;
+  margin: 6px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.span-wachlist{
+  font-weight: 800;
+}
 /*------------------------------------------MEDIA QUERIES*---------------------------------------*/
 
 @media (max-width: 600px) {
@@ -405,7 +420,7 @@ body {
     flex-direction: column;
     background-color: #1c1e26;
     border-radius: 10px;
-    height: 22rem;
+    height: 26rem;
     width: 20rem;
     margin: 1rem;
     padding: 1rem;
@@ -445,6 +460,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+
   }
   .button-days-chart {
     padding: 3px 6px;

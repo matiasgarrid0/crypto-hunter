@@ -15,7 +15,7 @@ export const Carousel = () => {
       let dollarTransform = Intl.NumberFormat('en-US')
       
     return (
-      <Link className="link-carousel-banner" to={"/"}>
+      <Link className="link-carousel-banner" to={`coin/${coin.id}`}>
         <img
           onDragStart={handleDragStart}
           src={coin?.image}

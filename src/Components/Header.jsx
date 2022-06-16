@@ -6,7 +6,6 @@ import { Auth } from "../Components/Auth/Auth";
 import { CryptoState } from "../Context";
 import { UserSidebar } from "./Auth/UserSidebar";
 
-
 export const Header = () => {
   const dispatch = useDispatch();
   const { user, setCurrency } = CryptoState();
@@ -14,7 +13,7 @@ export const Header = () => {
   const handleChange = (e) => {
     dispatch(getTrendingCoins(e.target.value));
     dispatch(getAllCoins(e.target.value));
-    setCurrency(e.target.value)
+    setCurrency(e.target.value);
   };
 
   return (

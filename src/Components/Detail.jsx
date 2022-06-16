@@ -95,7 +95,7 @@ export const Detail = () => {
           {user && (
             <Button
               variant="contained"
-              style={{ marginTop: 15, backgroundColor: inWachlist ? '#FF1A1A' : '#00DA11' }}
+              style={{ marginTop: 20, backgroundColor: inWachlist ? '#FF1A1A' : '#00DA11' }}
               onClick={inWachlist ?  removeFromWachlist : addToWachlist}
             >
               {inWachlist? 'Remove from watchlist':'Add to Watchlist'}
