@@ -310,6 +310,35 @@ body {
 .div-signup-google-button{
   margin-top: -1rem;
 }
+/*----------------------INFO----------------------*/
+.div-container-cards{
+  display: flex;
+  margin:2rem;
+  justify-content: center;
+}
+.div-container-card{
+  text-align: center;
+  width: 20rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #2d313d;
+  border-radius: 10px;
+}
+.logo-card-info{
+  width: 6rem;
+}
+.title-card-info{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.text-card-info{
+  color: #fff;
+  margin-top: 1rem;
+}
+.auth-info-button{
+  margin-top: 1rem;
+}
 
 /*---------User--------*/
 .div-drawer-user {

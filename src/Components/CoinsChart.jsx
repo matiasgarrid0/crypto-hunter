@@ -13,6 +13,7 @@ import {
   Legend,
 } from "chart.js";
 import { CryptoState } from "../Context";
+import { CircularProgress } from "@mui/material";
 
 export const CoinsChart = ({ coin }) => {
   const [historicData, setHistoricData] = useState();
@@ -31,7 +32,7 @@ export const CoinsChart = ({ coin }) => {
    getHistoricData();
     setFlag(true);
   }, [currency, days, coin]);
-  
+
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -44,7 +45,13 @@ export const CoinsChart = ({ coin }) => {
   return (
     <div>
       {!historicData ? (
-        <>...loading</>
+        <>
+        <CircularProgress
+          style={{color:'warning'}}
+          size={200}
+          thickness={1}
+        />
+        </>
       ) : (
         <>
           <Line

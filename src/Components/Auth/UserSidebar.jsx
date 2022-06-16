@@ -10,7 +10,6 @@ import { AiFillDelete } from "react-icons/ai";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../../Firebase";
 
-
 export const UserSidebar = () => {
   const [state, setState] = React.useState({
     right: false,
